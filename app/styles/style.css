@@ -85,12 +85,6 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-.headline {
-  width: 95%;
-  margin-bottom: .5rem;
-  padding: 2.2rem 1.5rem 1.2rem;
-}
-
 .headline p {
   margin-bottom: 1em;
 }
@@ -104,5 +98,52 @@ h1 {
 .searchbox h2 {
   font-size: 20px;
   margin-bottom: 20px;
+}
+
+.searchbox p {
+  font-size: 13px;
+}
+
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin-bottom: .5rem;
+  padding: 2.2rem 1.5rem 1.2rem;
+}
+
+.menu {
+  background-color: #efefef;
+}
+
+.menu .item {
+  margin-bottom: 2rem;
+}
+
+.menu .item h3 {
+  font-size: 1.5em;
+}
+
+.menu .item p {
+  height: 5rem;
+  font-size: 12px;
+  color: #787878;
+  margin-bottom: 0;
+}
+
+.menu .button {
+  background-color: #fff;
+  width: 9rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+  padding: .5rem .8rem;
+}
+
+.menu .button a {
+  margin-right: 5px;
+}
+
+.menu .button a:hover {
+  color: #8e4585;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

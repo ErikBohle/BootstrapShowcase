@@ -1,6 +1,94 @@
+
+//variables
 $primaryColor: #002b5a;
 $background: #fff;
 $bg-gray: #efefef;
-$secondaryColor: #8E4585;
+$secondaryColor: #8e4585;
 
+//mixins
+@mixin logo {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 3px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
 
+@mixin content{
+  width: 95%;
+  margin-bottom: .5rem;
+  padding: 2.2rem 1.5rem 1.2rem;
+}
+
+.banner {
+  position: relative;
+  .title {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    color: $background;
+    top: 80px;
+    h1 {
+      text-align: center;
+      font-size: 5rem;
+      color: $background;
+    }
+  }
+  .social {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    color: $background;
+    span{
+      margin-right: 10px;
+      font-size: 2em;
+    }
+    .twitter{
+      background-image: url(/BootstrapShowcase/app/images/Twitter_Logo_WhiteOnBlue.png);
+      @include logo();
+      }
+    .instagram{
+      background-image: url(/BootstrapShowcase/app/images/glyph-logo_May2016.png);
+      @include logo();
+    }
+    .email{
+      background-image: url(/BootstrapShowcase/app/images/hiclipart.com.png);
+      @include logo();
+    }
+    .facebook{
+      background-image: url(/BootstrapShowcase/app/images/badgeRGB-black.png);
+      @include logo();
+    }
+    }
+  
+  .image {
+    background-image: url(/BootstrapShowcase/app/images/harshal-s-hirve-516rZwqZ_-I-unsplash.png);
+    height: 25rem;
+    background-position: center top;
+    background-size: cover;
+  }
+}
+h1{
+  color:$secondaryColor;
+  margin-bottom: 0.5em;
+}
+
+.headline{
+  @include content();
+  p{
+    margin-bottom: 1em;
+  }
+}
+
+.searchbox{
+  width: 17rem;
+  background-color: $bg-gray;
+  padding: 1em;
+  h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

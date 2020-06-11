@@ -23,7 +23,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="app/styles/style.css" />
     <!-- scripts -->
-    <script src="app/scripts/app.js"></script>
+    
   </head>
   <!-- Todo:
   filter products
@@ -228,20 +228,20 @@
         <div class="col-md-4 filter">
           <span>Filter by</span>
           <select class="p-select">
-            <option value="0-100">All</option>
-            <option value="0-20">Less than 20</option>
-            <option value="20-30">From 20 to 30</option>
-            <option value="30-60">From 30 to 60</option>
-            <option value="60-100">From 60 to 100</option>
+            <option class="filter_link" value="all">All</option>
+            <option class="filter_link" value="0-20">Less than 20</option>
+            <option class="filter_link" value="20-40">From 20 to 40</option>
+            <option class="filter_link" value="40-60">From 40 to 60</option>
+            <option class="filter_link" value="60-100">From 60 to 100</option>
           </select>
         </div>
       </div>
       <div class="row">
         <!-- modal 1 -->
         <div class="col-md3  product-column">
-          <div class="product" data-product="1" date-price="15">
+          <div class="product" data-product="1" data-price="20">
             <h3>Not a Plum</h3>
-            <h4>Starting at 15kr/kg</h4>
+            <h4>Starting at 20kr/kg</h4>
             <p>For all your other needs</p>
             <div class="image"><img src="app/images/mockup-graphics-Kl3467edwsE-unsplash.jpg"></div>
             <div class="link"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId1">
@@ -251,7 +251,7 @@
         </div>
         <!-- modal 2 -->
         <div class="col-md3  product-column">
-          <div class="product" data-product="2" date-price="80">
+          <div class="product" data-product="2" data-price="80">
             <h3>Edible Plums</h3>
             <h4>Starting at 80kr/kg</h4>
             <p>The most edible of plums</p>
@@ -263,7 +263,7 @@
         </div>
         <!-- modal 3 -->
         <div class="col-md3  product-column">
-          <div class="product" data-product="3" date-price="25">
+          <div class="product" data-product="3" data-price="25">
             <h3>Plump Plums</h3>
             <h4>Starting at 25kr/kg</h4>
             <p>The plumpest plums.</p>
@@ -275,10 +275,10 @@
         </div>
         <!-- modal 4 -->
         <div class="col-md3  product-column">
-          <div class="product" data-product="4" date-price="38">
+          <div class="product" data-product="4" data-price="45">
             <h3>Liquid Plums</h3>
-            <h4>Starting at 38kr/kg</h4>
-            <p>The most fragrant on  thisside of the mississippi</p>
+            <h4>Starting at 45kr/kg</h4>
+            <p>The most fragrant on  this side of the mississippi</p>
             <div class="image"><img src="app/images/phaedra-botanicals-qSWR9VTdab0-unsplash.jpg"></div>
             <div class="link"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId4">
               Learn more <i class="fas fa-arrow-right"></i>
@@ -294,7 +294,7 @@
         <div class="modal-content">
             <div class="modal-header">
               <h3>Not a Plum</h3>
-              <h4>Starting at 15kr/kg</h4>
+              <h4>Starting at 20kr/kg</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -385,7 +385,7 @@
         <div class="modal-content">
             <div class="modal-header">
               <h3>Liquid Plums</h3><br>
-              <h4>Starting at 38kr/kg</h4>
+              <h4>Starting at 45kr/kg</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -433,5 +433,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="app/scripts/app.js"></script>
   </body>
 </html>

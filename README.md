@@ -1,10 +1,10 @@
 # Bootstrap showcase + search API
 
-This project showcases:
+## This project showcases:
 
-JS autocomplete features using awesomeplete.
+- JS autocomplete features using awesomeplete.
 
-Filter using "data" values and if else loops.
+- Filtering using "data" values and if else loops.
 
 Most of the scripts are held up with jQuery.
 
